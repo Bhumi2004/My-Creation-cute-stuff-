@@ -1,0 +1,949 @@
+body {
+  /* Light pink background */
+  background-color: none;
+
+  /* Add the background image property */
+  background-image: url("mybg.png");
+background-size: cover;
+background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background-color: #F0D3F7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+margin-top: 25px;
+border-color: #EB6BAD;
+  border-style: groove;
+}
+
+
+
+h1 {
+  color: #F582AE;  /* Hot pink heading */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: larger;
+}
+
+label {
+  color: #7EBCE6;  /* Light blue for labels */
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] 
+{
+  padding: 10px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+input:hover {
+  background-color:#F9D9FA;
+}
+
+button {
+  background-color: #F582AE;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+  font-size: larger;
+}
+
+button:active {
+  background-color: #EB6BAD;  /* Darker pink on hover */
+}
+
+.flowers {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  transform: translateX(50%);
+  
+}
+@keyframes bunnyji {
+ 
+  0%  {left:1250px; top:5px;}
+  25%  {left:1250px; top:630px;}
+  75%  { left:0px; top:630px;}
+  100% { left:0px; top:5px;}
+}
+.flowers img {
+
+  margin-left: 10px;
+    width: 110px;
+    height: 110px;
+    position: relative;
+    animation: bunnyji 10s linear 0s infinite alternate;
+  }
+
+
+
+.cartoon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-50%);
+}
+
+.cartoon img {
+  width: 150px;
+  height: 150px;
+ margin-bottom: 520px;
+ margin-left: 1005px;
+
+}
+h5 {
+  color: #F582AE;
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: large;
+}
+@keyframes blink {
+  0%, 100% {opacity: 1;}
+  50% {opacity: 0;}
+}
+#blinking {
+  animation: blink 1.5s linear infinite;
+}
+
+
+#box{
+width: 100px;
+ height: 50px;
+ background-color: rgb(207, 231, 252);
+display: flex;
+justify-content: center;
+align-items: center;
+border: 2px solid;
+border-color: black;
+border-radius: 5px;
+margin: auto;
+margin-top: 80px;
+margin-left: 560px;
+
+}
+#box {
+  animation: wave 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+  
+    transform: rotate(10deg);
+  }
+}
+
+#my{
+  animation: glowings 2s infinite alternate;
+  color:#F582AE ;
+  font-size: 50px bold;
+ 
+}
+@keyframes glowings {
+  from {
+    color: #F582AE;
+  }
+  to {
+    color: #ec2fb3;
+  }
+}
+
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  left: -80px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 300px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 40px; /* Increase font size */
+  color: #F2CCC3  ; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  display: flex;
+  justify-content: center;
+  align-self:center;
+ 
+ 
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+  font-family: 'Poppins',sans-serif;
+  top: 170px;
+  background-color: #C287E8;
+ 
+}
+
+#blog {
+  font-family: 'Poppins',sans-serif;
+  top: 280px;
+  background-color: #C287E8; /* Blue */
+}
+
+#projects {
+  font-family: 'Poppins',sans-serif;
+  top: 390px;
+  background-color: #C287E8; /* Red */
+}
+
+#contact {
+  font-family: 'Poppins',sans-serif;
+  top: 500px;
+  background-color: #C287E8; /* Light Black */
+  
+}
+#about {  /* Target the about link directly */
+  display: inline-block;  /* Allow elements to float */
+}
+
+#about img {
+  float: left;  /* Float the image to the left */
+  margin-left: 0px;  /* Add margin for spacing */
+}
+#background
+{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 310px;
+margin-top: 50px;
+  
+}
+@keyframes glowing {
+  from {
+    color: #C287E8;
+  }
+  to {
+    color:#68459d;
+  }
+}
+#mere
+{ animation: glowing 2s infinite alternate;
+
+  color: #C287E8;
+  font-size: 30px;
+  font-family: 'Poppins',sans-serif;
+}
+#bhumi
+{
+  font-size: 'Poppins',sans-serif;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-self:center;
+  background-color: #8ed9e7;
+  padding: 10px;
+  width: 500px;
+  border-radius: 40px;
+  border-color: #EB6BAD;
+  border-style: dotted;
+}
+#bhumi:hover {
+  font-size: 32px; /* Increase font size on hover */
+}
+#intro
+{
+  font-size: 'Poppins',sans-serif;
+  font-size: 20px; 
+  color: #0cc0df;
+  display: block;
+  background-color: #f3f99f;
+  width: 410px;
+  height: 300px;
+  border-radius: 10px;
+  border-color: #41BBD9;
+  border-style: dotted;
+ margin-left: -100px;
+ animation: bounce 1.5s infinite alternate ease-in-out;
+}
+
+#aboutbhumi
+{
+  margin: auto;
+ margin-left: 467px;
+  
+}
+#intro2
+{
+  font-size: 'Poppins',sans-serif;
+  font-size: 20px; 
+  color: #0cc0df;
+  display: block;
+  background-color: #E5FFDE;
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  border-color: #d941c7;
+  border-style: dotted;
+  margin-left: 467px;
+  margin-top: -150px;
+  animation: bounce 1.5s infinite alternate ease-in-out;
+}
+@keyframes bounce {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+#bhumiji {
+  height: 70px;
+  width: 100px;
+  /* No need for margin-left here, we'll use float instead */
+  float: right;  /* Move the image to the right side */
+  margin-bottom: 50px;  /* Add margin for spacing below the text */
+  position: relative;
+  top: -90px;
+  right: 440px;
+  animation: blink 5s linear infinite;  
+
+
+}
+body {
+  background-color: #FFC6D9;  /* Light pink background */
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background-color: #F0D3F7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+margin-top: 25px;
+border-color: #EB6BAD;
+  border-style: groove;
+}
+
+
+
+h1 {
+  color: #F582AE;  /* Hot pink heading */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: larger;
+}
+
+label {
+  color: #7EBCE6;  /* Light blue for labels */
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] 
+{
+  padding: 10px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+input:hover {
+  background-color:#F9D9FA;
+}
+
+button {
+  background-color: #F582AE;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+  font-size: larger;
+}
+
+button:active {
+  background-color: #EB6BAD;  /* Darker pink on hover */
+}
+
+.flowers {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  transform: translateX(50%);
+  
+}
+@keyframes bunnyji {
+ 
+  0%  {left:1250px; top:5px;}
+  25%  {left:1250px; top:630px;}
+  75%  { left:0px; top:630px;}
+  100% { left:0px; top:5px;}
+}
+.flowers img {
+
+  margin-left: 10px;
+    width: 110px;
+    height: 110px;
+    position: relative;
+    animation: bunnyji 10s linear 0s infinite alternate;
+  }
+
+
+
+.cartoon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-50%);
+}
+
+.cartoon img {
+  width: 150px;
+  height: 150px;
+ margin-bottom: 520px;
+ margin-left: 1005px;
+
+}
+h5 {
+  color: #F582AE;
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: large;
+}
+@keyframes blink {
+  0%, 100% {opacity: 1;}
+  50% {opacity: 0;}
+}
+#blinking {
+  animation: blink 1.5s linear infinite;
+}
+
+
+#box{
+width: 100px;
+ height: 50px;
+ background-color: rgb(207, 231, 252);
+display: flex;
+justify-content: center;
+align-items: center;
+border: 2px solid;
+border-color: black;
+border-radius: 5px;
+margin: auto;
+margin-top: 80px;
+margin-left: 560px;
+
+}
+#box {
+  animation: wave 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+  
+    transform: rotate(10deg);
+  }
+}
+
+#my{
+  animation: glowings 2s infinite alternate;
+  color:#F582AE ;
+  font-size: 50px bold;
+ 
+}
+@keyframes glowings {
+  from {
+    color: #F582AE;
+  }
+  to {
+    color: #ec2fb3;
+  }
+}
+
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  left: -80px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 300px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 40px; /* Increase font size */
+  color: #F2CCC3  ; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  display: flex;
+  justify-content: center;
+  align-self:center;
+ 
+ 
+}
+
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+
+/* The about link: 20px from the top with a green background */
+#about {
+  font-family: 'Poppins',sans-serif;
+  top: 170px;
+  background-color: #C287E8;
+ 
+}
+
+#blog {
+  font-family: 'Poppins',sans-serif;
+  top: 280px;
+  background-color: #C287E8; /* Blue */
+}
+
+#projects {
+  font-family: 'Poppins',sans-serif;
+  top: 390px;
+  background-color: #C287E8; /* Red */
+}
+
+#contact {
+  font-family: 'Poppins',sans-serif;
+  top: 500px;
+  background-color: #C287E8; /* Light Black */
+  
+}
+#about {  /* Target the about link directly */
+  display: inline-block;  /* Allow elements to float */
+}
+
+#about img {
+  float: left;  /* Float the image to the left */
+  margin-left: 0px;  /* Add margin for spacing */
+}
+#background
+{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 310px;
+margin-top: 50px;
+  
+}
+@keyframes glowing {
+  from {
+    color: #C287E8;
+  }
+  to {
+    color:#68459d;
+  }
+}
+#mere
+{ animation: glowing 2s infinite alternate;
+
+  color: #C287E8;
+  font-size: 30px;
+  font-family: 'Poppins',sans-serif;
+}
+#bhumi
+{
+  font-size: 'Poppins',sans-serif;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-self:center;
+  background-color: #8ed9e7;
+  padding: 10px;
+  width: 500px;
+  border-radius: 40px;
+  border-color: #EB6BAD;
+  border-style: dotted;
+}
+#bhumi:hover {
+  font-size: 32px; /* Increase font size on hover */
+}
+#intro
+{
+  font-size: 'Poppins',sans-serif;
+  font-size: 20px; 
+  color: #0cc0df;
+  display: block;
+  background-color: #f3f99f;
+  width: 410px;
+  height: 300px;
+  border-radius: 10px;
+  border-color: #41BBD9;
+  border-style: dotted;
+ margin-left: -100px;
+ animation: bounce 1.5s infinite alternate ease-in-out;
+}
+
+#aboutbhumi
+{
+  margin: auto;
+ margin-left: 467px;
+  
+}
+#intro2
+{
+  font-size: 'Poppins',sans-serif;
+  font-size: 20px; 
+  color: #0cc0df;
+  display: block;
+  background-color: #E5FFDE;
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  border-color: #d941c7;
+  border-style: dotted;
+  margin-left: 467px;
+  margin-top: -150px;
+  animation: bounce 1.5s infinite alternate ease-in-out;
+}
+@keyframes bounce {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+#bhumiji {
+  height: 70px;
+  width: 100px;
+  /* No need for margin-left here, we'll use float instead */
+  float: right;  /* Move the image to the right side */
+  margin-bottom: 50px;  /* Add margin for spacing below the text */
+  position: relative;
+  top: -90px;
+  right: 440px;
+  animation: blink 5s linear infinite;  
+
+
+}
+#bhumiji2 {
+  height: 70px;
+  width: 100px;
+  /* No need for margin-left here, we'll use float instead */
+  float: right;  /* Move the image to the right side */
+  margin-bottom: 50px;  /* Add margin for spacing below the text */
+  position: relative;
+  top: -90px;
+  right: 840px;
+  animation: blink 5s linear infinite;  
+
+}
+#me
+{
+  height: 100px;
+  width: 210px;
+  float: right;
+
+
+
+}
+
+#bhumiji3 {
+  height: 150px;
+  width: 450px;
+  /* No need for margin-left here, we'll use float instead */
+  float: right;  /* Move the image to the right side */
+  margin-bottom: 50px;  /* Add margin for spacing below the text */
+  position: relative;
+  top: -280px;
+  right: 700px;
+
+  animation: bounce 1.5s infinite alternate ease-in-out;
+}
+#bhumiji4
+{
+  width: 250px;
+  height: 100px;
+  float: right;
+  position: relative;
+  right: 100px;
+  animation: bounce 1.5s infinite alternate ease-in-out;
+  
+}
+#bhumiji5
+{
+  width: 150px;
+  height: 50px;
+  float: right;
+  position: relative;
+  right: 500px;
+  top:500px;
+  animation: bounce 1.5s infinite alternate ease-in-out;
+  
+}
+
+
+#art-item1 {
+  border: 0px solid #f358d9; /* Adjust border width and color as needed */
+  padding: 10px;  /* Add space between content and border */
+  margin: auto;  /* Add margin around the box */
+  width: 250px;
+  height: 250px;
+  margin-left: 300px;
+  margin-top: 20px;
+  text-align: center;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+  font-family: 'Poppins',sans-serif;
+  color: #8c52ff;
+  font-size: larger;
+ 
+ 
+}
+#art1
+{
+  width: 300px;
+  height: auto;
+
+
+}
+#art-item1:hover {
+  /* Remove grayscale on hover */
+  filter: grayscale(0);
+  
+  /* Optional hover effect (adjust as needed) */
+  /* Example 1: Subtle border glow */
+  box-shadow: 0 0 5px #ec2fb3;
+  
+  /* Example 2: Slight zoom and opacity change */
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+#art-item2 {
+  border: 0px solid #f358d9; /* Adjust border width and color as needed */
+  padding: 10px;  /* Add space between content and border */
+  margin: auto;  /* Add margin around the box */
+  width: 250px;
+  height: 250px;
+  margin-left: 700px;
+  margin-top: -270px;
+  text-align: center;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+  font-family: 'Poppins',sans-serif;
+  color: #8c52ff;
+  font-size: larger;
+ 
+ 
+}
+#art2
+{
+  width: 350px;
+  height: auto;
+
+}
+#art-item2:hover {
+  /* Remove grayscale on hover */
+  filter: grayscale(0);
+  
+  /* Optional hover effect (adjust as needed) */
+  /* Example 1: Subtle border glow */
+  box-shadow: 0 0 5px #ec2fb3;
+  
+  /* Example 2: Slight zoom and opacity change */
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+#art-item3 {
+  border: 0px solid #f358d9; /* Adjust border width and color as needed */
+  padding: 10px;  /* Add space between content and border */
+  margin: auto;  /* Add margin around the box */
+  width: 250px;
+  height: 250px;
+  margin-left: 1100px;
+  margin-top: -268px;
+  text-align: center;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+  font-family: 'Poppins',sans-serif;
+  color: #8c52ff;
+  font-size: larger;
+ 
+}
+#art3
+{
+  width: 300px;
+  height: auto;
+
+}
+#art-item3:hover {
+  /* Remove grayscale on hover */
+  filter: grayscale(0);
+  
+  /* Optional hover effect (adjust as needed) */
+  /* Example 1: Subtle border glow */
+  box-shadow: 0 0 5px #ec2fb3;
+  
+  /* Example 2: Slight zoom and opacity change */
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+#pj-item1 {
+  border: 0px solid #f358d9; /* Adjust border width and color as needed */
+  padding: 10px;  /* Add space between content and border */
+  margin: auto;  /* Add margin around the box */
+  width: 250px;
+  height: 250px;
+  margin-left: 300px;
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Poppins',sans-serif;
+  color: #8c52ff;
+  font-size: larger;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+#pj-item1:hover {
+  transform: translateZ(10px); /* Move the element slightly on hover */
+  box-shadow: 0 5px 15px rgba(174, 18, 210, 0.959); /* Add a subtle shadow on hover */
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+#pj1
+{
+  width: 300px;
+  height: auto;
+}
+
+
+#pj-item2 {
+  border: 0px solid #f358d9; /* Adjust border width and color as needed */
+  padding: 10px;  /* Add space between content and border */
+  margin: auto;  /* Add margin around the box */
+  width: 250px;
+  height: 250px;
+  margin-left: 700px;
+  margin-top: -270px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  font-family: 'Poppins',sans-serif;
+  color: #8c52ff;
+  font-size: larger;
+ 
+ 
+}
+#pj-item2:hover {
+  transform: translateZ(10px); /* Move the element slightly on hover */
+  box-shadow: 0 5px 15px rgba(174, 18, 210, 0.959); /* Add a subtle shadow on hover */
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+#pj2
+{
+  width: 350px;
+  height: auto;
+
+}
+
+#pj-item3 {
+  border: 0px solid #f358d9; /* Adjust border width and color as needed */
+  padding: 10px;  /* Add space between content and border */
+  margin: auto;  /* Add margin around the box */
+  width: 250px;
+  height: 250px;
+  margin-left: 1100px;
+  margin-top: -268px;
+  text-align: center;
+  color: #8c52ff;
+  font-size: larger;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+ 
+}
+#pj-item3:hover {
+  transform: translateZ(10px); /* Move the element slightly on hover */
+  box-shadow: 0 5px 15px rgba(197, 21, 237, 0.959); /* Add a subtle shadow on hover */
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+  
+
+#pj3
+{
+  width: 300px;
+  height: auto;
+
+}
+
+#contact-page {
+  text-align: center;  /* Horizontally centers the image */
+}
+
+#con {
+  display: block;     /* Ensures image behaves as a block-level element */
+  max-width: 900px;  /* Adjust as needed to control image size */
+  max-height: auto; 
+  margin: auto;/* Adjust as needed to control image size */
+  margin-left: 310px;
+  margin-top: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+#con:hover {
+  transform: translateZ(10px); /* Move the element slightly on hover */
+  box-shadow: 0 5px 15px rgba(197, 21, 237, 0.959); /* Add a subtle shadow on hover */
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
